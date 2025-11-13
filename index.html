@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объединенная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Отступ между секциями */
+        }
+        .site-section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 600px; /* Высота рамки для просмотра контента */
+            border: none;
+            display: block;
+        }
+        h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="site-section">
+            <h2>1. Контент с minstroy.gov.kg</h2>
+            <iframe 
+                src="https://minstroy.gov.kg/ru/department/65/show" 
+                title="Министерство строительства КР">
+            </iframe>
+        </div>
+
+        <div class="site-section">
+            <h2>2. Контент с dga.kg</h2>
+            <iframe 
+                src="https://dga.kg/category/regions/chui/" 
+                title="Государственное агентство архитектуры">
+            </iframe>
+        </div>
+
+    </div>
+
+    </body>
+</html>
